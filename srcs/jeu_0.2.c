@@ -1,5 +1,14 @@
 #include "jeu.h"
 
+void	clear()
+{
+#ifdef OSisWindows
+	system("cls");
+#else
+	system("clear");
+#endif
+}
+
 char    *ft_get_line()
 {
 	int 	a;
@@ -57,6 +66,10 @@ int	main()
 	char			*tmp;
 	t_personnage	player;
 
+	player.classe = 0;
+	ft_bzero(player.name, 21);
+	clear();
+
 	printf("Bonjour et bienvenue dans mon jeu ! Avant toute chose il vous faut savoir\nque vous faites passer les dialogues avec la touche entree.\n");
 	ft_pass();
 	printf("Bien joue ! Vous comprenez vite !\n");
@@ -65,10 +78,8 @@ int	main()
 	ft_pass();
 	printf("\nLe courageux guerrier a la force sans egale.\n\nLe puissant mage aux connaissances ocultes.\n\nLe mysterieux voleur aux ruses multiples.\n\n");
 	ft_pass();
-	printf("Veuillez ecrire la classe qui vous interesse : guerrier, mage ou voleur\n");
 
-	player.classe = 0;
-	ft_bzero(player.name, 21);
+	printf("Veuillez ecrire la classe qui vous interesse : guerrier, mage ou voleur\n");
 	while (!player.classe)
 	{
 		tmp = ft_get_line();
@@ -102,11 +113,11 @@ int	main()
 		ft_memdel((void*)&tmp);
 		tmp = ft_get_line();
 	}
-
 	strcpy(player.name, tmp);
 	ft_memdel((void*)&tmp);
 	printf("Ravi de vous connaitre %s !\n", player.name);
 	ft_pass();
+
 	printf("Pour ma part, vous pouvez m'appeler Elvelik, je suis une sorte de magicien\nqui a une facheuse tendance a se mêler de tout ce qui ne me regarde pas.\nEt je suis le seul au monde a pouvoir vous parler !\n");
 	ft_pass();
 	printf("...\n");
