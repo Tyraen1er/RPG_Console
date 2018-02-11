@@ -18,6 +18,7 @@ SRC_DIR			:=	./srcs
 INC_DIR			:=	./includes
 LIB_DIR			:=	./libs
 OBJ_DIR			:=	./objs
+BIN_DIR			:=	./bin
 
 # files to compile
 FILE_LIST		:=	jeu_0.2.c
@@ -35,19 +36,20 @@ LINK			:=	$(LIB_FT_LINK)
 
 # compiler and flags
 CC				:=	gcc
-CFLAGS			:=	-Wall -Wextra -Werror -fsanitize=address
+CFLAGS			:=	-Wall -Wextra -Werror -O0 -fsanitize=address
 
 all: obj libs $(NAME)
 
 obj:
 	@mkdir -p $(OBJ_DIR)
+	@mkdir -p $(BIN_DIR)
 
 libs:
 	@make -C $(LIB_FT)
 
 # linking rule: executable NAME needs OBJ_FILES to link
 $(NAME): $(OBJ_FILES)
-	$(CC) $(OBJ_FILES) $(LINK) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ_FILES) $(LINK) -o $(BIN_DIR)/$(NAME)
 
 # compiler rule: each .o file in OBJ_DIR needs a .c file in SRC_DIR
 # $< -- input file (.c)
@@ -59,7 +61,7 @@ clean:
 	rm -rf $(OBJ_DIR)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(BIN_DIR)
 
 relibs:
 	@make -C $(LIB_FT) re
