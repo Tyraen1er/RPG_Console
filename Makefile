@@ -21,7 +21,8 @@ OBJ_DIR			:=	./objs
 BIN_DIR			:=	./bin
 
 # files to compile
-FILE_LIST		:=	jeu_0.2.c
+FILE_LIST		:=	jeu_0.2.c	\
+					tools.c
 
 OBJ_FILES		:= $(addprefix $(OBJ_DIR)/,$(FILE_LIST:.c=.o))
 

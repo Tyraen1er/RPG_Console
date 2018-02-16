@@ -1,71 +1,18 @@
 #include "jeu.h"
 
-void	clear()
-{
-#ifdef OSisWindows
-	system("cls");
-#else
-	system("clear");
-#endif
-}
-
-char    *ft_get_line()
-{
-	int 	a;
-	char	*ret;
-	char	*buf;
-
-	a = 20;
-	ret = NULL;
-	buf = (char[21]){0};
-	while (a == 20)
-	{
-		if ((a = read(0, buf, 20)) == -1)
-		{
-			printf("\nread error\n");
-			exit(3);
-		}
-		ft_bzero(buf + a, 21 - a);
-		if (!ret)
-			ret = ft_strdup(buf);
-		else
-			ret = ft_strjoin(ret, buf);
-	}
-	ret[ft_strlen(ret) - 1] = 0;
-	for (a = 0 ; buf[a]; ++a)
-		buf[a] = tolower(buf[a]);
-	return (ret);
-}
-
-void	ft_pass()
-{
-	int		a;
-	int		b;
-	char	buf[21];
-
-	buf[20] = 0;
-	b = 0;
-	while (b != 50)
-	{
-		if (-1 == (a = read(0, buf, 20)))
-		{
-			printf("\nread error\n");
-			exit(3);
-		}
-		ft_bzero(buf + a, 20 - a);
-		while (b <= a)
-		{
-			if (buf[b++] == '\n')
-				return ;
-		}
-	}
-}
-
 int	main()
 {
 	char			*tmp;
 	t_personnage	player;
+	int				fd;
 
+	if (-1 == (fd = open("save.rpg", O_RDWR | O_CREAT , 0777)))
+	{
+		printf("coucou il y a une erreur avec open\n");
+		return (0);
+	}
+	printf("le fd = %d\n", fd);
+	sleep(3);
 	player.classe = 0;
 	ft_bzero(player.name, 21);
 	clear();
