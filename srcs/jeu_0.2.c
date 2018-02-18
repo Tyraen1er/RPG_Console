@@ -27,6 +27,7 @@ void	chapitre_0(t_perso *joueur)
 {
 	char			*tmp;
 
+	joueur->chapitre = 0;
 	printf("Bonjour et bienvenue dans mon jeu ! Avant toute chose il vous faut savoir\nque vous faites passer les dialogues avec la touche entrée.\n");
 	ft_pass();
 	printf("Bien joué ! Vous comprenez vite !\n");
@@ -90,6 +91,7 @@ void	chapitre_1(t_perso *joueur)
 {
 	char			*tmp;
 
+	joueur->chapitre = 1;
 	tmp = NULL;
 	(void)joueur;
 	printf("|------------------------------------------------|\n\nVous vous réveillez en sueur dans une taverne de bois et de pierre.\nVous appercevez le TENANCIER accoudé au bar en train de laver un verre au coté\nd'une FEMME armurée et très équipée qui vous tourne le dos. Un HOMME sur votre\ndroite semble ennuyé face des documents ressemblant à de la comptabilité.\nVous êtes vous même assis à une table avec une chope contenantun liquide\ninconnu à la main. Pour finir vous sentez un courant d'air frais venir de la\nporte derrière vous. Que faites vous ?\n(Entrez un seul mot-clé qui sont les mots en majuscules.)\n");

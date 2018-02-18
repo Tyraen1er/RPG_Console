@@ -1,4 +1,5 @@
 #include "jeu.h"
+#include "quetes.c"
 
 void	clear()
 {
@@ -7,6 +8,41 @@ void	clear()
 #else
 	system("clear");
 #endif
+}
+
+t_quete		*new_quete(int id)
+{
+	t_quete	*quete;
+
+	quete = (t_quete*)malloc(sizeof(t_quete));
+	quete->id = id;
+	if (id == 0)
+	{
+		quete->etat = &principal_1;
+	}
+	else if (id == 1)
+	{
+	}
+	else if (id == 2)
+	{
+	}
+	else
+	{
+		printf("Quête non implémentée\n");
+		return (NULL);
+	}
+	return (quete);
+}
+
+void	check_quetes(t_perso *joueur)
+{
+	t_quete	*tmp;
+
+	tmp = joueur->journal;
+	while (tmp->nextQuest != NULL)
+	{
+		tmp->etat();
+	}
 }
 
 char    *ft_get_line()
