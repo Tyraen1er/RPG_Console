@@ -7,11 +7,11 @@
 #define VOLEUR 2
 #define MAGE 3
 
-typedef struct	s_quest
+typedef struct		s_quete
 {
-	int				*(*valide)();
+	int				*(*etat)();
 	struct s_quest	*nextQuest;
-}					t_quest;
+}					t_quete;
 
 typedef struct	s_stat
 {
@@ -22,17 +22,19 @@ typedef struct	s_stat
 	int			sagesse;
 }				t_stat;
 
-typedef struct	s_personnage
+typedef struct	s_perso
 {
 	char		name[21];
 	int			classe;
 	int			sexe;
 	t_stat		stat;
-	t_quest		*journal;
-}				t_personnage;
+	t_quete		*journal;
+}				t_perso;
 
 void			clear();
 char			*ft_get_line();
 void			ft_pass();
+void			chapitre_0(t_perso *joueur);
+void			chapitre_1(t_perso *joueur);
 
 #endif

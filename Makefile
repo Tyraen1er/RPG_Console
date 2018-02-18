@@ -39,14 +39,14 @@ LINK			:=	$(LIB_FT_LINK)
 CC				:=	gcc
 CFLAGS			:=	-Wall -Wextra -Werror -O0 -fsanitize=address
 
-all: obj libs $(NAME)
+all: libr obj $(NAME)
 
-obj:
+obj: 
 	@mkdir -p $(OBJ_DIR)
 	@mkdir -p $(BIN_DIR)
 
-libs:
-	@make -C $(LIB_FT)
+libr:
+	make -C $(LIB_FT)
 
 # linking rule: executable NAME needs OBJ_FILES to link
 $(NAME): $(OBJ_FILES)
@@ -63,6 +63,9 @@ clean:
 
 fclean: clean
 	rm -rf $(BIN_DIR)
+
+allclean: fclean
+	@make -C $(LIB_FT) fclean
 
 relibs:
 	@make -C $(LIB_FT) re

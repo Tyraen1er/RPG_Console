@@ -32,8 +32,7 @@ char    *ft_get_line()
 			ret = ft_strjoin(ret, buf);
 	}
 	ret[ft_strlen(ret) - 1] = 0;
-	for (a = 0 ; buf[a]; ++a)
-		buf[a] = tolower(buf[a]);
+	ft_str_tolower(ret);
 	return (ret);
 }
 
