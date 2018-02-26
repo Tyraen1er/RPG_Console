@@ -23,18 +23,16 @@ But du jeu: réparer le téléporteur vers Ilenaï.
 Village juste au sud de Faërn, donc possiblité de voir des êtres de la forêt.
 
 Quête Principale : 
-_ Le téléporteur ne fonctionne plus à cause du cristal d'alimentation qui a été volé (structure de téléporteur endommagé 
-pouvant être réparé)
-
-_ Les voleurs du cristal sont des brigands non loin du village cherchant à piller autant que possible sans attirer l'attention des soldats de la capitale. Cependant le cristal même est entre les mains d'un jeune ayant rejoint leur bande récemment et ayant juste dérapé par leur influence.
-
-_ Pour réparer la structure soit il faut acquérir les connaissances de réparation pour, soit fait appel à un expert. L'expert en question est le bibliothéquaire, un ancien aventurier qui veut finir sa vie paisibilement et qui refuse de trop se méler des affaires du village. 
+_ Le téléporteur ne fonctionne plus, il a été saboté par des brigands et le cristal d'alimentation a été volé (structure de téléporteur endommagé + cristal à trouver). Les voleurs du cristal sont des bandits non loin du village cherchant à piller autant que possible sans attirer l'attention des soldats de la capitale. Cependant le cristal même est entre les mains d'un jeune ayant rejoint leur bande récemment et ayant juste dérapé par leur influence. Pour réparer la structure soit il faut acquérir les connaissances de réparation pour, soit fait appel à un expert. L'expert en question est le bibliothéquaire, un ancien aventurier qui veut finir sa vie paisibilement et qui refuse de trop se méler des affaires du village. 
 	_ Le bibliothéquaire refuse d'aider tant qu'on lui redonne pas le gout de l'aventure, il faut lui ramener un de ses souvenirs perdus dans le village.
 		_ soluce 1 :Le père du forgeron connaissait bien le bibliothéquaire... Il sait donc que ce dernier avait fait comme première quête une chasse d'un sanglier géant (défense de sanglier + jet de charisme pour convaincre le bibliothéquaire).
 		_soluce 2 :Le tavernier conserve des trophets dans sa cave mais il ne s'en séparera que contre de l'argent, donc il faut travailler pour lui ou le payer pour obtenir une plume de phénix géant.
 		_soluce 3 :Faire parler le bibliothéquaire de lui même, et lorsqu'il parle de son passé d'aventurier lui demandé de nous former. Il faut gagner un combat contre lui pour finir la quete et qu'il accepte de réparer le téléporteur pour que tu débutes ton aventure.
+	_ Pour réparer la structure soi même il faut analyser le pilier et rééquilibrer les éléments le constituant.
+		soluce : Analyse avec livre des sceaux pour comprendre les éléments perturbés (déchiffrement). Il faut équilibrer le sceau (équation 4 inconnus à équilibrer). Pour retracer le sceau il faut soit etre mage, soit trouver une plume de traçage.
 
-_Pour le cristal il faut le récupérer au jeune qui l'a volé. Il est également possible de convaincre l'étrange jeune femme (fée) d'aider le village.
-	_La fée n'a aucun intérêt à aider les humains, elle est juste venue voir quelqu'un discrètement dans la taverne, l'assassin éxilé Thanat. Mais elle ne veut pas que celui ci soit au courrant (contradiction dans ce qu'elle veut et fait volontaire = elle est intimidée)
+
+_Pour le cristal il faut le récupérer au jeune qui l'a volé. Il est également possible de convaincre l'étrange jeune femme (fée) d'aider le village, elle vous donnera un nouveau cristal.
+	_La fée n'a aucun intérêt à aider les humains, elle est juste venue voir quelqu'un discrètement à la taverne, l'assassin éxilé: Thanat. Mais elle ne veut pas que celui ci soit au courrant (contradiction dans ce qu'elle veut et fait volontaire = elle est intimidée)
 		_soluce 1: Rentrer dans les bonnes grace de Thanat en montrant sa bonne foi en s'occupant des bandits sans avoir de récompense. (dans les dialogues il déteste l'avidité humaine et la peur. Si on a peur on condamne la quête)
-		_soluce 2: Découvrir la véritable nature de la fée en ayant assez d'information sur son peuple puis lui dire qu'on connait sa vraie nature (une sorte de chantage) 
+		_soluce 2: Découvrir la véritable nature de la fée en ayant assez d'information sur son peuple puis lui dire qu'on connait sa vraie nature (une sorte de chantage)

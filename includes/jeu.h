@@ -4,8 +4,10 @@
 # include "libft.h"
 
 # define GUERRIER 1
-# define VOLEUR 2
-# define MAGE 3
+# define MAGE 2
+
+# define HOMME 1
+# define FEMME 2
 
 typedef struct		s_quete
 {
