@@ -68,7 +68,7 @@ char    *ft_get_line()
 			ret = ft_strjoin(ret, buf);
 	}
 	ret[ft_strlen(ret) - 1] = 0;
-	ft_str_tolower(ret);
+	ft_str_lower(ret);
 	return (ret);
 }
 
